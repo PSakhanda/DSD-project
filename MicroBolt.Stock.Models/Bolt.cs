@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace MicroBolt.Stock.Data
+namespace MicroBolt.Stock.Models
 {
-    public class Bolt: Product
+    public class Bolt : Product
     {
         public int LenthMm { get; set; }
         public int StepMm { get; set; }

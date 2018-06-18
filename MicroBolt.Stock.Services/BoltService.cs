@@ -1,39 +1,45 @@
-﻿using MicroBolt.Stock.Data;
+﻿using AutoMapper;
+using MicroBolt.Stock.Data;
+using MicroBolt.Stock.Data.Contracts.Entity;
 using MicroBolt.Stock.Data.Contracts.Repositories;
 using MicroBolt.Stock.Models;
 using MicroBolt.Stock.Services.Contracts;
 using System;
+using System.Threading.Tasks;
 
 namespace MicroBolt.Stock.Services
 {
     public class BoltService : IBoltService
     {
         private readonly IBoltRepository boltRepository;
-
-        public BoltService(IBoltRepository boltRepository)
+        private readonly IMapper mapper;
+        
+        public BoltService(IBoltRepository boltRepository,
+            IMapper mapper)
         {
             this.boltRepository = boltRepository;
+            this.mapper = mapper;
         }
 
-        public int Create(Bolt model)
+        public async Task<TResult> Get<TResult>(string id)
         {
-            throw new NotImplementedException();
+            return this.mapper.Map<TResult>(await this.boltRepository.GetBolt(id));
         }
 
-        public void Delete(int id)
+        public async Task Create(BoltModel model)
         {
-            throw new NotImplementedException();
+            var enity = this.mapper.Map<Bolt>(model);
+            await this.boltRepository.CreateBolt(enity);
         }
 
-        public Bolt Get(int id)
+        public async Task Update(BoltModel model)
         {
-            this.storeContext.Bolts
-            throw new NotImplementedException();
+            var entity = this.mapper.Map<Bolt>(model);
+            await this.boltRepository.UpdateBolt(entity);
         }
-
-        public void Update(Bolt model)
+        public async Task Delete(string id)
         {
-            throw new NotImplementedException();
+            await this.boltRepository.DeleteBolt(id);
         }
     }
 }

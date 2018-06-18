@@ -1,6 +1,6 @@
-﻿using MicroBolt.Stock.Product.Dto;
+﻿using MicroBolt.Stock.Products.Dto;
 
-namespace MicroBolt.Stock.Bolt.Dto
+namespace MicroBolt.Stock.Bolts.Dto
 {
     public class BaseBoltDto: BaseProductDto
     {

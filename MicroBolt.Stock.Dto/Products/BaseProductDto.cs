@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MicroBolt.Stock.Product.Dto
+namespace MicroBolt.Stock.Products.Dto
 {
     public class BaseProductDto
     {

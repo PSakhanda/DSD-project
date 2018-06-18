@@ -6,7 +6,7 @@ using MongoDB.Driver.GridFS;
 
 namespace MicroBolt.Stock.Data
 {
-    public class BoltRepository
+    public class StoreContext
     {
         IMongoDatabase database; // база данных
         IGridFSBucket gridFS;   // файловое хранилище

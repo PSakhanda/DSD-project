@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace MicroBolt.Stock.Data.Contracts.Repositories
 {
-    public class StoreRepository : IStoreRepository
+    public class BoltRepository : IBoltRepository
     {
         private readonly StoreContext context;
-        public StoreRepository(StoreContext context)
+
+        public BoltRepository(StoreContext context)
         {
             this.context = context;
         }

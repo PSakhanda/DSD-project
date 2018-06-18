@@ -1,13 +1,14 @@
 ﻿using MicroBolt.Stock.Models;
 using System;
+using System.Threading.Tasks;
 
 namespace MicroBolt.Stock.Services.Contracts
 {
     public interface IBoltService
     {
-        Bolt Get(int id);
-        int Create(Bolt model);
-        void Update(Bolt model);
-        void Delete(int id);
+        Task<T> Get<T>(string id);
+        Task Create(BoltModel model);
+        Task Update(BoltModel model);
+        Task Delete(string id);
     }
 }

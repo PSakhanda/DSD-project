@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MicroBolt.Stock.Bolt.Dto
+namespace MicroBolt.Stock.Bolts.Dto
 {
     public class CreateOrUpdateBoltDto : BaseBoltDto
     {

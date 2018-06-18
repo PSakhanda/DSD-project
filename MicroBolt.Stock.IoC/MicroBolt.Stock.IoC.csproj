@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MicroBolt.Stock.Data.Contracts\MicroBolt.Stock.Data.Contracts.csproj" />
+    <ProjectReference Include="..\MicroBolt.Stock.Dto\MicroBolt.Stock.Dto.csproj" />
+    <ProjectReference Include="..\MicroBolt.Stock.Models\MicroBolt.Stock.Models.csproj" />
+  </ItemGroup>
+
+</Project>

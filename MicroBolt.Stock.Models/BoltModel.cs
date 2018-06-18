@@ -2,7 +2,7 @@
 
 namespace MicroBolt.Stock.Models
 {
-    public class Bolt : Product
+    public class BoltModel : ProductModel
     {
         public int LenthMm { get; set; }
         public int StepMm { get; set; }

@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  microbolt.clients.web:
+    image: ${DOCKER_REGISTRY}microboltclientsweb
+    build:
+      context: .
+      dockerfile: MicroBolt.Clients.Web/Dockerfile
+
+  microbolt.identity.web:
+    image: ${DOCKER_REGISTRY}microboltidentityweb
+    build:
+      context: .
+      dockerfile: MicroBolt.Identity.Web/Dockerfile
+
+
+  microbolt.stock.web:
+    image: ${DOCKER_REGISTRY}microboltstockweb
+    build:
+      context: .
+      dockerfile: MicroBolt.Stock.Web/Dockerfile
+

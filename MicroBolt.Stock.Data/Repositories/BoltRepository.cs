@@ -8,9 +8,9 @@ namespace MicroBolt.Stock.Data.Contracts.Repositories
 {
     public class BoltRepository : IBoltRepository
     {
-        private readonly StoreContext context;
+        private readonly IStoreContext context;
 
-        public BoltRepository(StoreContext context)
+        public BoltRepository(IStoreContext context)
         {
             this.context = context;
         }

@@ -3,10 +3,11 @@ using MicroBolt.Stock.Data.Contracts.Entity;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
 using MongoDB.Driver.GridFS;
+using MicroBolt.Stock.Data.Contracts;
 
 namespace MicroBolt.Stock.Data
 {
-    public class StoreContext
+    public class StoreContext : IStoreContext
     {
         IMongoDatabase database; // база данных
         IGridFSBucket gridFS;   // файловое хранилище

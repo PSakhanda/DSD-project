@@ -25,6 +25,14 @@ namespace MicroBolt.Stock.Web.Controllers
             this.mapper = mapper;
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Get(int skip = 0, int top = 10)
+        {
+            var result = await this.boltService.GetMany<GetBoltDto>(skip, top);
+
+            return Ok(result);
+        }
+
         [HttpGet("{id}")]
         public async Task<IActionResult> Get(string id)
         {
@@ -33,7 +41,8 @@ namespace MicroBolt.Stock.Web.Controllers
             return Ok(result);
         }
 
-        [HttpPost, Authorize]
+        // [HttpPost, Authorize]
+        [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateOrUpdateBoltDto dto)
         {
             var model = this.mapper.Map<BoltModel>(dto);

@@ -1,13 +1,15 @@
 ﻿using MicroBolt.Stock.Data.Contracts.Entity;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace MicroBolt.Stock.Data.Contracts.Repositories
 {
     public interface IBoltRepository
     {
-        Task<Bolt> GetBolt(string id);
-        Task CreateBolt(Bolt entity);
-        Task UpdateBolt(Bolt entity);
-        Task DeleteBolt(string id);
+        Task<Bolt> Get(string id);
+        Task<ICollection<Bolt>> GetMany(int skip, int top);
+        Task Create(Bolt entity);
+        Task Update(Bolt entity);
+        Task Delete(string id);
     }
 }

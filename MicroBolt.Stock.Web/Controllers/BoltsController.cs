@@ -38,6 +38,11 @@ namespace MicroBolt.Stock.Web.Controllers
         {
             var result = await this.boltService.Get<GetBoltDto>(id);
 
+            if (result == null)
+            {
+                return BadRequest("Not found");
+            }
+
             return Ok(result);
         }
 
@@ -51,7 +56,8 @@ namespace MicroBolt.Stock.Web.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id}"), Authorize]
+        // [HttpPut("{id}"), Authorize]
+        [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, [FromBody] CreateOrUpdateBoltDto dto)
         {
             var model = this.mapper.Map<BoltModel>(dto);
@@ -62,7 +68,8 @@ namespace MicroBolt.Stock.Web.Controllers
             return NoContent();
         }
 
-        [HttpDelete("{id}"), Authorize]
+        // [HttpDelete("{id}"), Authorize]
+        [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(string id)
         {
             await this.boltService.Delete(id);

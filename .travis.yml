@@ -4,6 +4,5 @@ dist: trusty
 mono: none
 dotnet: 2.1.300
 script:  
+  - dotnet restore
   - dotnet build MicroBolt.Stock.Web/MicroBolt.Stock.Web.csproj -c Release
-before_install:
-  - dotnet add package Microsoft.Extensions.Configuration.Abstractions --version 2.1.1

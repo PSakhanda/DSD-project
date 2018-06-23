@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Services"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Models", "MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj", "{CDE99928-4DDE-4EFA-8DA7-35685594C087}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Services.Contracts", "MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj", "{22CFBD32-B552-4F96-82E0-FBC13894B126}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{CDE99928-4DDE-4EFA-8DA7-35685594C087}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CDE99928-4DDE-4EFA-8DA7-35685594C087}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CDE99928-4DDE-4EFA-8DA7-35685594C087}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22CFBD32-B552-4F96-82E0-FBC13894B126}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22CFBD32-B552-4F96-82E0-FBC13894B126}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22CFBD32-B552-4F96-82E0-FBC13894B126}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22CFBD32-B552-4F96-82E0-FBC13894B126}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -110,6 +116,7 @@ Global
 		{DD374D17-D6B9-4760-A35C-2908287DE65D} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{CDE99928-4DDE-4EFA-8DA7-35685594C087} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
+		{22CFBD32-B552-4F96-82E0-FBC13894B126} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0590CEB-5F75-4241-BE51-658F65F42D03}

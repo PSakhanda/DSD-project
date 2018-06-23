@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace MicroBolt.Clients.Web.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/Clients")]
     public class ValuesController : Controller
     {
         // GET api/values

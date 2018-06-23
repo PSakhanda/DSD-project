@@ -20,3 +20,10 @@ services:
       context: .
       dockerfile: MicroBolt.Stock.Web/Dockerfile
 
+
+  microbolt.client.web:
+    image: ${DOCKER_REGISTRY}microboltclientweb
+    build:
+      context: .
+      dockerfile: ../MicroBolt.Client.Web/Dockerfile
+

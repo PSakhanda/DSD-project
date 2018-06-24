@@ -6,7 +6,7 @@ using System.Text;
 
 namespace MicroBolt.Clients.Data.Contracts
 {
-    public interface IClientContext
+    public interface IStoreContext
     {
         IMongoCollection<Client> Clients { get; }
     }

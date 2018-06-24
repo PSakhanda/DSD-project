@@ -29,17 +29,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Identity.Web", "M
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Clients", "Clients", "{90C53D55-7317-4E3D-B5E6-75C95E4659FE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Web", "MicroBolt.Clients.Web\MicroBolt.Clients.Web.csproj", "{DD374D17-D6B9-4760-A35C-2908287DE65D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Services", "..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj", "{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Services", "..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj", "{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Models", "MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj", "{CDE99928-4DDE-4EFA-8DA7-35685594C087}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Models", "MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj", "{CDE99928-4DDE-4EFA-8DA7-35685594C087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Services.Contracts", "MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj", "{22CFBD32-B552-4F96-82E0-FBC13894B126}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Services.Contracts", "MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj", "{22CFBD32-B552-4F96-82E0-FBC13894B126}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Dto", "MicroBolt.Clients.Dto\MicroBolt.Clients.Dto.csproj", "{C079CFBE-A059-4FFD-A7AF-4C6C2307E269}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Dto", "MicroBolt.Clients.Dto\MicroBolt.Clients.Dto.csproj", "{C079CFBE-A059-4FFD-A7AF-4C6C2307E269}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Data.Contracts", "MicroBolt.Clients.Data.Contracts\MicroBolt.Clients.Data.Contracts.csproj", "{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Data.Contracts", "MicroBolt.Clients.Data.Contracts\MicroBolt.Clients.Data.Contracts.csproj", "{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Cart.Web", "MicroBolt.Cart.Web\MicroBolt.Cart.Web.csproj", "{3994484E-9E0F-4DE2-B7C6-A787AA0E4B3D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Data", "..\MicroBolt.Clients.Data\MicroBolt.Clients.Data.csproj", "{5CBA0644-F12A-48A0-BB97-637BE629D2E7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.IoC", "MicroBolt.Clients.IoC\MicroBolt.Clients.IoC.csproj", "{39ABC327-8D48-4F62-ACE7-C957D5D51273}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Web", "MicroBolt.Clients.Web\MicroBolt.Clients.Web.csproj", "{3F0FC802-EA2D-423B-92F6-1BDDFF8C15EB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,10 +93,6 @@ Global
 		{B7B13F11-33E2-4AE5-92BC-96CE839F1C12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B13F11-33E2-4AE5-92BC-96CE839F1C12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B13F11-33E2-4AE5-92BC-96CE839F1C12}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DD374D17-D6B9-4760-A35C-2908287DE65D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DD374D17-D6B9-4760-A35C-2908287DE65D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DD374D17-D6B9-4760-A35C-2908287DE65D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DD374D17-D6B9-4760-A35C-2908287DE65D}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -111,6 +113,22 @@ Global
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3994484E-9E0F-4DE2-B7C6-A787AA0E4B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3994484E-9E0F-4DE2-B7C6-A787AA0E4B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3994484E-9E0F-4DE2-B7C6-A787AA0E4B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3994484E-9E0F-4DE2-B7C6-A787AA0E4B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CBA0644-F12A-48A0-BB97-637BE629D2E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CBA0644-F12A-48A0-BB97-637BE629D2E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CBA0644-F12A-48A0-BB97-637BE629D2E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CBA0644-F12A-48A0-BB97-637BE629D2E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39ABC327-8D48-4F62-ACE7-C957D5D51273}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39ABC327-8D48-4F62-ACE7-C957D5D51273}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39ABC327-8D48-4F62-ACE7-C957D5D51273}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39ABC327-8D48-4F62-ACE7-C957D5D51273}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F0FC802-EA2D-423B-92F6-1BDDFF8C15EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F0FC802-EA2D-423B-92F6-1BDDFF8C15EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F0FC802-EA2D-423B-92F6-1BDDFF8C15EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F0FC802-EA2D-423B-92F6-1BDDFF8C15EB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -125,12 +143,14 @@ Global
 		{0E1BEF9F-75D7-4294-824B-DAA6B8E6814A} = {BEAFE93F-AAE1-4863-8B0E-96B4A907EF97}
 		{A8862739-573C-476C-B34B-1DA42F372AEA} = {BEAFE93F-AAE1-4863-8B0E-96B4A907EF97}
 		{B7B13F11-33E2-4AE5-92BC-96CE839F1C12} = {F88821A9-0540-41D4-9164-F2E6FABCA4FB}
-		{DD374D17-D6B9-4760-A35C-2908287DE65D} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{CDE99928-4DDE-4EFA-8DA7-35685594C087} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{22CFBD32-B552-4F96-82E0-FBC13894B126} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{C079CFBE-A059-4FFD-A7AF-4C6C2307E269} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
+		{5CBA0644-F12A-48A0-BB97-637BE629D2E7} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
+		{39ABC327-8D48-4F62-ACE7-C957D5D51273} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
+		{3F0FC802-EA2D-423B-92F6-1BDDFF8C15EB} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0590CEB-5F75-4241-BE51-658F65F42D03}

@@ -9,7 +9,7 @@ namespace MicroBolt.Clients.Data.Contracts.Repositories
     public interface IClientRepository
     {
         Task<Client> Get(string id);
-        Task<ICollection<Client>> GetMany(int skip, int top);
+        Task<ICollection<Client>> GetMany();
         Task Create(Client entity);
         Task Update(Client entity);
         Task Delete(string id);

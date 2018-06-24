@@ -4,7 +4,7 @@ using System.Text;
 
 namespace MicroBolt.Clients.Dto
 {
-    class GetClientDto
+    public class GetClientDto : BaseClientDto
     {
         public string Id { get; set; }
     }

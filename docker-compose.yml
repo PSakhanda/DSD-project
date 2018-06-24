@@ -27,3 +27,10 @@ services:
       context: .
       dockerfile: ../MicroBolt.Client.Web/Dockerfile
 
+
+  microbolt.cart.web:
+    image: ${DOCKER_REGISTRY}microboltcartweb
+    build:
+      context: .\..\MicroBolt.Cart.Web
+      dockerfile: Dockerfile
+

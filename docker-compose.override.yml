@@ -32,3 +32,7 @@ services:
     ports:
       - "80"
 
+
+  microbolt.cart.web:
+    ports:
+      - "80"

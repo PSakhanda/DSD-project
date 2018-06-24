@@ -33,17 +33,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Web", "Mi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Services", "..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj", "{EF9F2EBB-2CA9-4714-9DD3-FC906FBBF4AE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Models", "MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj", "{CDE99928-4DDE-4EFA-8DA7-35685594C087}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Models", "MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj", "{CDE99928-4DDE-4EFA-8DA7-35685594C087}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Services.Contracts", "MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj", "{22CFBD32-B552-4F96-82E0-FBC13894B126}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Services.Contracts", "MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj", "{22CFBD32-B552-4F96-82E0-FBC13894B126}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Dto", "MicroBolt.Clients.Dto\MicroBolt.Clients.Dto.csproj", "{C079CFBE-A059-4FFD-A7AF-4C6C2307E269}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Dto", "MicroBolt.Clients.Dto\MicroBolt.Clients.Dto.csproj", "{C079CFBE-A059-4FFD-A7AF-4C6C2307E269}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Data.Contracts", "MicroBolt.Clients.Data.Contracts\MicroBolt.Clients.Data.Contracts.csproj", "{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Cart.Web", "MicroBolt.Cart.Web\MicroBolt.Cart.Web.csproj", "{2D4B0EA3-6DB6-439F-A5D0-B2B65F710C33}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Cart", "Cart", "{EB798310-CF39-4A2B-9F17-6EDF380A1D3F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.Data.Contracts", "MicroBolt.Clients.Data.Contracts\MicroBolt.Clients.Data.Contracts.csproj", "{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -115,10 +111,6 @@ Global
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2D4B0EA3-6DB6-439F-A5D0-B2B65F710C33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D4B0EA3-6DB6-439F-A5D0-B2B65F710C33}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D4B0EA3-6DB6-439F-A5D0-B2B65F710C33}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D4B0EA3-6DB6-439F-A5D0-B2B65F710C33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,7 +131,6 @@ Global
 		{22CFBD32-B552-4F96-82E0-FBC13894B126} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{C079CFBE-A059-4FFD-A7AF-4C6C2307E269} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{F0AAFE20-5967-42B6-9568-D8B81B66E5F4} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
-		{2D4B0EA3-6DB6-439F-A5D0-B2B65F710C33} = {EB798310-CF39-4A2B-9F17-6EDF380A1D3F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0590CEB-5F75-4241-BE51-658F65F42D03}

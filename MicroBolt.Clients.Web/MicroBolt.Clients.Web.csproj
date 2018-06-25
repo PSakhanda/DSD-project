@@ -22,7 +22,6 @@
     <ProjectReference Include="..\MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj" />
-    <ProjectReference Include="..\MicroBolt.Stock.Dto\MicroBolt.Stock.Dto.csproj" />
   </ItemGroup>
 
 </Project>

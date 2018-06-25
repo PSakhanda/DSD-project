@@ -15,13 +15,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\MicroBolt.Clients.Data\MicroBolt.Clients.Data.csproj" />
-    <ProjectReference Include="..\..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Data.Contracts\MicroBolt.Clients.Data.Contracts.csproj" />
+    <ProjectReference Include="..\MicroBolt.Clients.Data\MicroBolt.Clients.Data.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Dto\MicroBolt.Clients.Dto.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.IoC\MicroBolt.Clients.IoC.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj" />
+    <ProjectReference Include="..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj" />
     <ProjectReference Include="..\MicroBolt.Stock.Dto\MicroBolt.Stock.Dto.csproj" />
   </ItemGroup>
 

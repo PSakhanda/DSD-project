@@ -1,5 +1,4 @@
-﻿using Microsoft.Extensions.Logging;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
 using StackExchange.Redis;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,33 +8,24 @@ namespace MicroBolt.Cart.Web.Model
 {
     public class RedisCartRepository : ICartRepository
     {
-        private readonly ILogger<RedisCartRepository> _logger;
+        private readonly ConnectionMultiplexer redisConnections;
 
-        private readonly ConnectionMultiplexer _redis;
-        private readonly IDatabase _database;
-
-        public RedisCartRepository(ILoggerFactory loggerFactory, ConnectionMultiplexer redis)
+        public RedisCartRepository()
         {
-            _logger = loggerFactory.CreateLogger<RedisCartRepository>();
-            _redis = redis;
-            _database = redis.GetDatabase();
+            var connectionString = "localhost,abortConnect=false";
+            this.redisConnections = ConnectionMultiplexer.Connect(connectionString);
         }
 
         public async Task<bool> DeleteCartAsync(string id)
         {
-            return await _database.KeyDeleteAsync(id);
-        }
-
-        public IEnumerable<string> GetUsers()
-        {
-            var server = GetServer();
-            var data = server.Keys();
-            return data?.Select(k => k.ToString());
+            var db = this.redisConnections.GetDatabase();
+            return await db.KeyDeleteAsync(id);
         }
 
         public async Task<CustomerCart> GetCartAsync(string customerId)
         {
-            var data = await _database.StringGetAsync(customerId);
+            var db = this.redisConnections.GetDatabase();
+            var data = await db.StringGetAsync(customerId);
             if (data.IsNullOrEmpty)
             {
                 return null;
@@ -46,22 +36,13 @@ namespace MicroBolt.Cart.Web.Model
 
         public async Task<CustomerCart> UpdateCartAsync(CustomerCart cart)
         {
-            var created = await _database.StringSetAsync(cart.BuyerId, JsonConvert.SerializeObject(cart));
+            var db = this.redisConnections.GetDatabase();
+            var created = await db.StringSetAsync(cart.BuyerId, JsonConvert.SerializeObject(cart));
             if (!created)
             {
-                _logger.LogInformation("Problem occur persisting the item.");
                 return null;
             }
-
-            _logger.LogInformation("Cart item persisted succesfully.");
-
             return await GetCartAsync(cart.BuyerId);
-        }
-
-        private IServer GetServer()
-        {
-            var endpoint = _redis.GetEndPoints();
-            return _redis.GetServer(endpoint.First());
         }
     }
 }

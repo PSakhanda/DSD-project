@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-MicroBolt.Identity.Web-3658FC6E-B9B6-4C4D-90BE-F2C4329CD011</UserSecretsId>
+    <Configurations>Debug;Release;Rabbit</Configurations>
   </PropertyGroup>
 
 

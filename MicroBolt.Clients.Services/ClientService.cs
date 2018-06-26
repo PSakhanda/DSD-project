@@ -6,19 +6,23 @@ using MicroBolt.Clients.Services.Contracts;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using MicroBolt.Clients.MessageBus;
 
 namespace MicroBolt.Clients.Services
 {
+   
     public class ClientService : IClientService
     {
         private readonly IClientRepository clientRepository;
         private readonly IMapper mapper;
+        public IRabbitTransfer rat;
 
         public ClientService(IClientRepository clientRepository,
-            IMapper mapper)
+            IMapper mapper, IRabbitTransfer rat)
         {
             this.clientRepository = clientRepository;
             this.mapper = mapper;
+            this.rat = rat;
         }
 
         public async Task<TResult> Get<TResult>(string id)
@@ -34,6 +38,7 @@ namespace MicroBolt.Clients.Services
         public async Task Create(ClientModel model)
         {
             var enity = this.mapper.Map<Client>(model);
+            rat.Start(model);
             await this.clientRepository.Create(enity);
         }
 

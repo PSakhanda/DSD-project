@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\MicroBolt.Clients.Data.Contracts\MicroBolt.Clients.Data.Contracts.csproj" />
+    <ProjectReference Include="..\MicroBolt.Clients.MessageBus\MicroBolt.Clients.MessageBus.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj" />
   </ItemGroup>
 

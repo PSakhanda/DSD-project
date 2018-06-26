@@ -13,13 +13,13 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using AutoMapper;
 using MicroBolt.Clients.Data.Contracts.Models;
-using System.Reflection;
 using MicroBolt.Clients.Data.Contracts;
 using MicroBolt.Clients.Data;
 using MicroBolt.Clients.Data.Contracts.Repositories;
 using MicroBolt.Clients.Data.Repositories;
 using MicroBolt.Clients.Services.Contracts;
 using MicroBolt.Clients.Services;
+using MicroBolt.Clients.MessageBus;
 
 namespace MicroBolt.Clients.Web
 {
@@ -49,6 +49,7 @@ namespace MicroBolt.Clients.Web
             services.AddTransient<IStoreContext, StoreContext>();
             services.AddTransient<IClientRepository, ClientRepository>();
             services.AddTransient<IClientService, ClientService>();
+            services.AddTransient<IRabbitTransfer, RabbitTransfer>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

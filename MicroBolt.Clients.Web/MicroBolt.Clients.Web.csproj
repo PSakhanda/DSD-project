@@ -12,6 +12,8 @@
     <PackageReference Include="AutoMapper" Version="7.0.1" />
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="RabbitMQ" Version="3.6.2" />
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.0" />
   </ItemGroup>
 
   <ItemGroup>
@@ -19,6 +21,7 @@
     <ProjectReference Include="..\MicroBolt.Clients.Data\MicroBolt.Clients.Data.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Dto\MicroBolt.Clients.Dto.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.IoC\MicroBolt.Clients.IoC.csproj" />
+    <ProjectReference Include="..\MicroBolt.Clients.MessageBus\MicroBolt.Clients.MessageBus.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Models\MicroBolt.Clients.Models.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Services.Contracts\MicroBolt.Clients.Services.Contracts.csproj" />
     <ProjectReference Include="..\MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj" />

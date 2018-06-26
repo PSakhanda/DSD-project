@@ -49,6 +49,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.IoC", "Mi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Services", "MicroBolt.Clients.Services\MicroBolt.Clients.Services.csproj", "{1B4DB613-EC2F-4E76-A6D1-1229627C8305}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Clients.MessageBus", "MicroBolt.Clients.MessageBus\MicroBolt.Clients.MessageBus.csproj", "{6FF05930-D91F-4336-BF84-1FF08D2DCD82}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,6 +133,10 @@ Global
 		{1B4DB613-EC2F-4E76-A6D1-1229627C8305}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1B4DB613-EC2F-4E76-A6D1-1229627C8305}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1B4DB613-EC2F-4E76-A6D1-1229627C8305}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FF05930-D91F-4336-BF84-1FF08D2DCD82}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FF05930-D91F-4336-BF84-1FF08D2DCD82}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FF05930-D91F-4336-BF84-1FF08D2DCD82}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FF05930-D91F-4336-BF84-1FF08D2DCD82}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -154,6 +160,7 @@ Global
 		{7B85E5B0-7EA2-4015-ADF0-1C0E92442740} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{69C120D9-272C-4F54-9F9F-4DD84E677539} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{1B4DB613-EC2F-4E76-A6D1-1229627C8305} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
+		{6FF05930-D91F-4336-BF84-1FF08D2DCD82} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0590CEB-5F75-4241-BE51-658F65F42D03}

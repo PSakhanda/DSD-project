@@ -6,3 +6,5 @@ dotnet: 2.1.300
 script:
   - dotnet build MicroBolt.Stock.Web/MicroBolt.Stock.Web.csproj -c Release
   - dotnet build MicroBolt.Clients.Web/MicroBolt.Clients.Web.csproj -c Release
+notifications:
+  webhooks: https://fathomless-fjord-24024.herokuapp.com/notify

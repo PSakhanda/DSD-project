@@ -1,4 +1,7 @@
-﻿using RabbitMQ.Client;
+﻿using MicroBolt.Clients.Data.Contracts.Entity;
+using MicroBolt.Clients.Models;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
 using System;
 using System.Text;
 
@@ -6,7 +9,7 @@ namespace MicroBolt.Clients.MessageBus
 {
     public class RabbitTransfer : IRabbitTransfer
     {
-        public void Start()
+        public void Start(ClientModel entity)
         {
             var factory = new ConnectionFactory() { HostName = "localhost" };
             using (var connection = factory.CreateConnection())
@@ -18,7 +21,7 @@ namespace MicroBolt.Clients.MessageBus
                                      autoDelete: false,
                                      arguments: null);
 
-                string message = "Hello World!";
+                string message = JsonConvert.SerializeObject(entity);
                 var body = Encoding.UTF8.GetBytes(message);
 
                 channel.BasicPublish(exchange: "",

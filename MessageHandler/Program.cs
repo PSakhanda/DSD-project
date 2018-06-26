@@ -1,4 +1,6 @@
-﻿using RabbitMQ.Client;
+﻿using MicroBolt.Clients.Models;
+using Newtonsoft.Json;
+using RabbitMQ.Client;
 using RabbitMQ.Client.Events;
 using System;
 using System.Text;
@@ -25,7 +27,8 @@ namespace MessageHandler
                 {
                     var body = ea.Body;
                     var message = Encoding.UTF8.GetString(body);
-                    Console.WriteLine(" [x] Received {0}", message);
+                    var data = JsonConvert.DeserializeObject<ClientModel>(message);
+                    Console.WriteLine(" [x] Received {0}", data.Name);
                 };
                 channel.BasicConsume(queue: "hello",
                                      autoAck: true,

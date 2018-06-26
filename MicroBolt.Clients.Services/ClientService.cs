@@ -32,13 +32,13 @@ namespace MicroBolt.Clients.Services
 
         public async Task<ICollection<TResult>> GetMany<TResult>()
         {
-            rat.Start();
             return this.mapper.Map<ICollection<TResult>>(await this.clientRepository.GetMany());
         }
 
         public async Task Create(ClientModel model)
         {
             var enity = this.mapper.Map<Client>(model);
+            rat.Start(model);
             await this.clientRepository.Create(enity);
         }
 

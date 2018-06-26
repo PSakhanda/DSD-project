@@ -16,4 +16,9 @@
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MicroBolt.Cart.MessageBus\MicroBolt.Cart.MessageBus.csproj" />
+    <ProjectReference Include="..\MicroBolt.Cart.Models\MicroBolt.Cart.Models.csproj" />
+  </ItemGroup>
+
 </Project>

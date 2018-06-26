@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace MicroBolt.Cart.Web.Model
+namespace MicroBolt.Cart.Models
 {
     public class CustomerCart
     {

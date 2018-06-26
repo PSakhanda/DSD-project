@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace MicroBolt.Cart.Web.Model
+namespace MicroBolt.Cart.Models
 {
     public interface ICartRepository
     {

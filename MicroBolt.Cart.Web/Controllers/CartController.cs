@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MicroBolt.Cart.Web.Model;
+using MicroBolt.Cart.Models;
 using System.Net;
 using System.Threading.Tasks;
+
+using MicroBolt.Cart.MessageBus;
 
 namespace MicroBolt.Cart.Web.Controllers
 {
@@ -37,6 +39,18 @@ namespace MicroBolt.Cart.Web.Controllers
             var cart = await _repository.UpdateCartAsync(value);
 
             return Ok(cart);
+        }
+
+        [Route("checkout")]
+        [HttpPost]
+        [ProducesResponseType((int)HttpStatusCode.Accepted)]
+        [ProducesResponseType((int)HttpStatusCode.BadRequest)]
+        public void Checkout([FromBody]CustomerCart value)
+        {
+            var userId = value.BuyerId;
+            var MsgBus = new CheckoutMsg();
+            MsgBus.Send(value);
+            _repository.DeleteCartAsync(userId);
         }
 
         // DELETE api/values/5

@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace MicroBolt.Cart.Web.Model
+namespace MicroBolt.Cart.Models
 {
     public class RedisCartRepository : ICartRepository
     {

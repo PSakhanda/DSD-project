@@ -7,7 +7,8 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-using MicroBolt.Cart.Web.Model;
+using MicroBolt.Cart.Models;
+using MicroBolt.Cart.MessageBus;
 
 namespace MicroBolt.Cart.Web
 {

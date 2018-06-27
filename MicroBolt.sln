@@ -51,11 +51,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.Services"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.MessageBus", "MicroBolt.Clients.MessageBus\MicroBolt.Clients.MessageBus.csproj", "{6FF05930-D91F-4336-BF84-1FF08D2DCD82}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageHandler", "MessageHandler\MessageHandler.csproj", "{F38F99B6-BA27-4AED-B9AF-C679602F7441}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Clients.MessageHandler", "MessageHandler\MicroBolt.Clients.MessageHandler.csproj", "{F38F99B6-BA27-4AED-B9AF-C679602F7441}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Cart.Models", "MicroBolt.Cart.Models\MicroBolt.Cart.Models.csproj", "{8B47188B-D723-4C72-8DE7-CFC62FF47CF3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MicroBolt.Cart.MessageBus", "MicroBolt.Cart.MessageBus\MicroBolt.Cart.MessageBus.csproj", "{67841FBC-67DA-4E72-8417-E144B7960CB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicroBolt.Stock.MessageHandler", "..\MicroBolt.Stock.MessageHandler\MicroBolt.Stock.MessageHandler.csproj", "{A120C1CA-9E56-41F4-A87B-F84E064BE2FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -155,6 +157,10 @@ Global
 		{67841FBC-67DA-4E72-8417-E144B7960CB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{67841FBC-67DA-4E72-8417-E144B7960CB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{67841FBC-67DA-4E72-8417-E144B7960CB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A120C1CA-9E56-41F4-A87B-F84E064BE2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A120C1CA-9E56-41F4-A87B-F84E064BE2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A120C1CA-9E56-41F4-A87B-F84E064BE2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A120C1CA-9E56-41F4-A87B-F84E064BE2FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -182,6 +188,7 @@ Global
 		{F38F99B6-BA27-4AED-B9AF-C679602F7441} = {90C53D55-7317-4E3D-B5E6-75C95E4659FE}
 		{8B47188B-D723-4C72-8DE7-CFC62FF47CF3} = {EB798310-CF39-4A2B-9F17-6EDF380A1D3F}
 		{67841FBC-67DA-4E72-8417-E144B7960CB4} = {EB798310-CF39-4A2B-9F17-6EDF380A1D3F}
+		{A120C1CA-9E56-41F4-A87B-F84E064BE2FF} = {BEAFE93F-AAE1-4863-8B0E-96B4A907EF97}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0590CEB-5F75-4241-BE51-658F65F42D03}

@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 using System;
 using System.Text;
 
-namespace MessageHandler
+namespace MicroBolt.Clients.MessageHandler
 {
     class Program
     {

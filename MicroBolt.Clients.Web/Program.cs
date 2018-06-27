@@ -19,6 +19,9 @@ namespace MicroBolt.Clients.Web
 
         public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
+                .UseKestrel()
+                .UseUrls("http://localhost:5000", "http://192.168.43.232:5000")
+                .UseIISIntegration()
                 .UseStartup<Startup>();
     }
 }

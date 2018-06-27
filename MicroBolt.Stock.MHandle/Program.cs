@@ -8,21 +8,17 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace MicroBolt.Stock.Web
+namespace MicroBolt.Stock.MHandle
 {
     public class Program
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            CreateWebHostBuilder(args).Build().Run();
         }
 
-        public static IWebHost BuildWebHost(string[] args) =>
+        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseKestrel()
-                .UseUrls("http://localhost:5000","http://192.168.43.232:5000")
-                .UseIISIntegration()
-                .UseStartup<Startup>()
-                .Build();
+                .UseStartup<Startup>();
     }
 }
